@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Space+Mono:wght@700&display=swap');
+
+body{
+    
+    margin:0;
+    box-sizing: border-box;
+    background: linear-gradient(180deg, #B068E9 0%, #6463E7 100%);
+    
+
+}
+
+.sec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    width: 327px;
+    border-radius: 23px;
+    margin-left: 24px;
+    margin-bottom: 448px;
+    
+}
+
+.logo-woman{
+
+    width: 237px;
+    height: 140px;
+}
+
+span{
+
+    font-size: 13px;
+}
