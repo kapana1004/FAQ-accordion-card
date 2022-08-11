@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Space+Mono:wght@700&display=swap');
 
 body{
-    
+    display: flex;
+    justify-content: center;
     margin:0;
     box-sizing: border-box;
     background: linear-gradient(180deg, #B068E9 0%, #6463E7 100%);
+    background-repeat:no-repeat;
+    min-height: 100vh;
     
 
 }
@@ -12,22 +15,159 @@ body{
 .sec{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin-top: 148px;
     background: white;
     width: 327px;
     border-radius: 23px;
     margin-left: 24px;
+    margin-right: 24px;
     margin-bottom: 448px;
-    
+    position: relative;
+}
+.logo-pattern-desktop{
+
+    display: none;
 }
 
-.logo-woman{
+.logo-woman-desktop{
 
-    width: 237px;
-    height: 140px;
+    display: none;
 }
+
+.box{
+
+    display: none;
+}
+
 
 span{
 
     font-size: 13px;
 }
+.main{
+
+    margin-top: 132px;
+    margin-bottom: 48px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+hr{
+
+    margin-bottom: 19px;
+}
+
+h1{
+
+    margin-left: 100px;
+    margin-bottom: 40px;
+    font-family: 'Kumbh Sans';
+    font-size: 32px;
+}
+
+.logo-pattern{
+
+    position: absolute;
+    top: 0%;
+    left: 16%;
+    width: 230px;
+   
+}
+
+.logo-woman{
+    position: absolute;
+    top: -19%;
+    left: 15%;
+    width: 237px;
+    height: 167px;
+
+}
+
+.iconarrow{
+
+    position: absolute;
+    left: 95%;
+    top: 30%;
+}
+
+#relat{
+
+    position: relative;
+}
+
+@media (min-width: 1440px){
+
+.sec{
+
+   
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 920px;
+    height: 509px;
+}
+
+.main{
+    margin-left: 476px;
+    margin-right: 95px;
+    margin-top: 65px;
+    
+
+}
+h1{
+    margin-left: 0;
+}
+
+.logo-pattern{
+
+    display: none;
+}
+.logo-woman{
+
+    display: none;
+    width: 472px;
+}
+
+.logo-pattern-desktop{
+
+    display: flex;
+    position: absolute;
+    left: -65%;
+    top: -55%;
+}
+
+.logo-woman-desktop{
+
+    display: flex;
+    width: 444px;
+    position: absolute;
+    left: -6%;
+    top: 15%;
+}
+
+.box{
+
+    display: flex;
+    width: 242px;
+    height: 210px;
+    position: absolute;
+    top: 37%;
+    left: -13%;
+}
+
+span:hover{
+
+    color: rgba(244, 123, 86, 1);
+}
+
+span{
+
+font-family: 'Kumbh Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+color: rgba(75, 76, 95, 1);
+}
+}
+
