@@ -52,6 +52,20 @@ span{
     margin-right: 24px;
 }
 
+.members{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.par{
+
+    display: none;
+}
+.active{
+
+    display: block;
+}
 hr{
 
     margin-bottom: 19px;
@@ -63,6 +77,16 @@ h1{
     margin-bottom: 40px;
     font-family: 'Kumbh Sans';
     font-size: 32px;
+}
+
+p{
+    
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    display: block;
 }
 
 .logo-pattern{
@@ -86,8 +110,14 @@ h1{
 .iconarrow{
 
     position: absolute;
-    left: 95%;
-    top: 30%;
+    right: 0px;
+    top: 6px;
+}
+
+.iconrotate{
+  
+    transform: rotate(180deg);
+
 }
 
 #relat{
@@ -158,6 +188,7 @@ h1{
 span:hover{
 
     color: rgba(244, 123, 86, 1);
+    cursor: pointer;
 }
 
 span{
