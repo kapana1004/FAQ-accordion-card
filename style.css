@@ -53,8 +53,8 @@ span{
 }
 
 .members{
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     position: relative;
 }
 
@@ -114,7 +114,7 @@ p{
     top: 6px;
 }
 
-.iconrotate{
+.iconRotate{
   
     transform: rotate(180deg);
 

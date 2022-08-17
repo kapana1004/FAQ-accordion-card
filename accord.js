@@ -62,18 +62,36 @@ const removeActive = function(){
   
 }
 
+const removIcons = function(){
+  for (let i=0; i < allQuestions.length; i++) {
+
+
+      
+      
+      let removIconRotate = allQuestions[i].querySelector(".iconarrow");
+      removIconRotate.classList.remove("iconRotate");
+       
+      
+    console.log(removIconRotate);
+    
+    }
+
+}
+
 for (let i=0; i < allQuestions.length; i++) {
 
 allQuestions[i].addEventListener("click", function(){
       removeActive();
+      removIcons ();
       let answer = allQuestions[i].querySelector(".par");
       answer.classList.toggle("active");
+      
       let arrowIcon = allQuestions[i].querySelector(".iconarrow");
-      arrowIcon.classList.toggle("iconrotate");
-
+      arrowIcon.classList.toggle("iconRotate");
+      
       
 
-      console.log(answer);
+      
 
 
 })
