@@ -1,58 +1,23 @@
 
-// const membersLine = document.getElementsByClassName(".members");
-// const uploadLine = document.getElementsByClassName(".upload");
-// const passwordLine = document.getElementsByClassName(".password");
-// const subscriptionLine = document.getElementsByClassName(".subscription");
-// const supportLine = document.getElementsByClassName(".support");
-
-
-// console.log(membersLine);
-
-// let answer1 = document.getElementsByClassName(".membersAnswer");
-
-// function getanswer1 (){
-
-//     answer1.innerHtml = "You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan"
-   
-// }
-
-//         console.log(answer1.value);
-    
-
-
-// membersLine.addEventListener('click', function(){
-
-//     getanswer1 ()
-// })
-
-
-// const questions = document.getElementById("relat");
-
-// let i;
-
-// for (i = 0; i < questions.length; i++) {
-//   questions[i].addEventListener("click", function() {
-//     this.classList.toggle("active");
-//     let answer = this.nextElementSibling;
-//     if (answer.style.display === "block") {
-//       answer.style.display = "none";
-//     } else {
-//       answer.style.display = "block";
-//     }
-//   });
-// }
 
 
 
-let allQuestions = document.querySelectorAll("#relat");
+let allQuestions = document.querySelectorAll(".question");
 
-const removeActive = function(){
+const removeActive = function(activIndex){
   for (let i=0; i < allQuestions.length; i++) {
 
 
-    let answer = allQuestions[i].querySelector(".par");
-    answer.classList.remove("active");
-    
+   
+    if (i != activIndex){
+
+      let answer = allQuestions[i].querySelector(".par");
+      answer.classList.remove("active");
+      let removIconRotate = allQuestions[i].querySelector(".iconarrow");
+      removIconRotate.classList.remove("iconRotate");
+      let removeBold = allQuestions[i].querySelector(".bold");
+      removeBold.classList.remove("questionActive");
+    }
     
     
       
@@ -62,32 +27,21 @@ const removeActive = function(){
   
 }
 
-const removIcons = function(){
-  for (let i=0; i < allQuestions.length; i++) {
 
-
-      
-      
-      let removIconRotate = allQuestions[i].querySelector(".iconarrow");
-      removIconRotate.classList.remove("iconRotate");
-       
-      
-    console.log(removIconRotate);
-    
-    }
-
-}
 
 for (let i=0; i < allQuestions.length; i++) {
 
 allQuestions[i].addEventListener("click", function(){
-      removeActive();
-      removIcons ();
+      removeActive(i);
+      
       let answer = allQuestions[i].querySelector(".par");
       answer.classList.toggle("active");
       
       let arrowIcon = allQuestions[i].querySelector(".iconarrow");
       arrowIcon.classList.toggle("iconRotate");
+
+      let questionAct = allQuestions[i].querySelector(".bold");
+      questionAct.classList.toggle("questionActive");
       
       
 

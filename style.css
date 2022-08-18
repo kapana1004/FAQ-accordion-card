@@ -52,10 +52,19 @@ span{
     margin-right: 24px;
 }
 
-.members{
+.question{
     /* display: flex;
     flex-direction: column; */
     position: relative;
+}
+.questionActive{
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(30, 31, 54, 1);
+
 }
 
 .par{
